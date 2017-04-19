@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uw.dhan206.newsreader.ArticleListFragment">
+
+    <TextView
+        android:id="@+id/articleListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placeholder Text for Headline"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        />
+
+    <ListView
+        android:id="@+id/articleList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/articleListTitle"></ListView>
+
+</RelativeLayout>
