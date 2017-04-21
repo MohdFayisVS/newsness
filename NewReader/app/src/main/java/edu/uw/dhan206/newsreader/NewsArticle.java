@@ -48,6 +48,7 @@ public class NewsArticle {
         return this.headline;
     }
 
+    // Displays the date in "EEE, d MMM yyyy" format
     public String getDate() {
         SimpleDateFormat formatter = new SimpleDateFormat("EEE, d MMM yyyy");
         return formatter.format(new Date(publishTime));
