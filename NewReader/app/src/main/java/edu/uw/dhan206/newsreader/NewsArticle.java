@@ -1,3 +1,5 @@
+package edu.uw.dhan206.newsreader;
+
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -7,7 +9,10 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+
+import static android.os.Build.VERSION_CODES.M;
 
 /**
  * A class representing a single news item (article). Can be parsed from the New York Times API.
@@ -41,6 +46,12 @@ public class NewsArticle {
     public String toString() {
         //can modify this to include more or different details
         return this.headline;
+    }
+
+    // Displays the date in "EEE, d MMM yyyy" format
+    public String getDate() {
+        SimpleDateFormat formatter = new SimpleDateFormat("EEE, d MMM yyyy");
+        return formatter.format(new Date(publishTime));
     }
 
 

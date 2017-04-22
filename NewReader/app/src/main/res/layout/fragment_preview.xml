@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uw.dhan206.newsreader.PreviewFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/previewHeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:text="News Headline" />
+                <TextView
+                    android:id="@+id/previewDate"
+                    android:textSize="15sp"
+                    android:text="date place holder"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/previewImage"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/img_not_available"
+                        android:layout_weight="2"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/previewSnippet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_weight="3"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/previewFullArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="View Full Article"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
